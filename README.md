@@ -1,4 +1,30 @@
-# KImóveis - TypeORM com Relacionamentos
+# KImóveis 
+
+# PARA RODAR O PROJETO
+
+## Requisitos
+
+- Ter o Node instalado
+- Ter o nmp instalado (gerenciador de pacotes)
+
+## Informações
+
+- Database: Banco de Dados em PostgreSQL (PSQL), sistema gerenciador de banco de dados relacional de código aberto, altamente confiável e escalável. Ele é amplamente utilizado em projetos web e aplicativos empresariais devido à sua capacidade de lidar com grandes volumes de dados e sua conformidade com os padrões SQL.
+
+- Arquivo .env: Existe um arquivo **.env.example** na pasta matriz do projeto com 2 variáveis de ambiente dentro dele:
+
+  - **DATABASE_URL = "postgres://(user):(password)@(host):(port)/(database)"**
+  - **SECRET_KEY =**
+
+  este arqivo deve-se transformar-se em **.env** e deve-se substituir as informações entre **( )**, com as informações do psql do desenvolverdor e preencher a variável **SECRET_KEY =**
+
+## Fazer os seguintes comandos
+
+npm install (para instalar dependencias)
+
+npm run typeorm migration:run -- -d src/data-source (para rodar as migrations)
+
+npm run dev (para iniciar o servidor)
 
 ## Endpoints:
 
